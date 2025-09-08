@@ -1,8 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-#define SIZE 5
-
 typedef struct queue{
     int data;
     struct queue *next;
