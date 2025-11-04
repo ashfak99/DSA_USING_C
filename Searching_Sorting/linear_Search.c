@@ -16,8 +16,13 @@ int linear_Search(int arr[], int size, int k)
 
 int main(int argc, char const *argv[])
 {
-    int arr[]={1,2,3,4,5,6,7,8,9};
-    int pos=linear_Search(arr,9,5);
+    freopen("in.txt","r",stdin);
+    freopen("out.txt","w",stdout);
+    int arr[10];
+    for (int i = 0; i < 10; i++) {
+        scanf("%d", &arr[i]);
+    }
+    int pos=linear_Search(arr,10,5);
     printf("%d at %dth position",arr[pos],pos+1);
     return 0;
 }
