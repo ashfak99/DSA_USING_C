@@ -2,7 +2,7 @@
 #include<stdlib.h>
 
 #define SIZE 10
-
+ 
 int stack[SIZE];
 int top=-1;
 
@@ -42,10 +42,9 @@ void displayStack()
         printf("\nStack is UNDERFLOW\n");
         return;
     }
-    printf("\n");
     for (int i = top; i >= 0; i--)
     {
-        printf("%d\n",stack[i]);
+        printf("\n%d",stack[i]);
     }
 }
 
