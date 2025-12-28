@@ -22,18 +22,21 @@ void bubble_SORT(int arr[], int size)
 
 int main(int argc, char const *argv[])
 {
-    freopen("in.txt","r",stdin);
-    freopen("out.txt","w",stdout);
-    int arr[10];
-    for (int i = 0; i < 10; i++)
+    int n;
+    printf("Please enter the size of array : ");
+    scanf("%d",&n);
+    int arr[n];
+    printf("\nPlease enter the element of array : ");
+    for (int i = 0; i < n; i++)
     {
         scanf("%d",&arr[i]);
     }
     
-    bubble_SORT(arr,10);
-    for (int i = 0; i < 10; i++)
+    bubble_SORT(arr,n);
+    printf("\nSORTED ARRAY:  ");
+    for (int i = 0; i < n; i++)
     {
-        printf("%d\t",arr[i]);
+        printf("%d ",arr[i]);
     }
     
     return 0;

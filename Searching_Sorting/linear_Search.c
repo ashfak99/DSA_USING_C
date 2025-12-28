@@ -16,13 +16,27 @@ int linear_Search(int arr[], int size, int k)
 
 int main(int argc, char const *argv[])
 {
-    freopen("in.txt","r",stdin);
-    freopen("out.txt","w",stdout);
-    int arr[10];
-    for (int i = 0; i < 10; i++) {
+    int n,target;
+    printf("Please enter the number of element in array  : ");
+    scanf("%d",&n);
+
+    int arr[n];
+    printf("\nPlease enter the elements : ");
+    for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
-    int pos=linear_Search(arr,10,5);
-    printf("%d at %dth position",arr[pos],pos+1);
+     
+    printf("\nEnter the element you want to search : ");
+    scanf("%d",&target);
+
+    int pos=linear_Search(arr,n,target);
+    
+    if (pos==-1)
+    {
+        printf("\n%d is not present..",target);
+        return 0;
+    }
+
+    printf("%d at %dth position",target,pos+1);
     return 0;
 }
