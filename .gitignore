@@ -60,3 +60,5 @@ dkms.conf
 
 infix_postfix.C
 infix_to_postfix_evaluation.C
+
+boothAlgo.c
